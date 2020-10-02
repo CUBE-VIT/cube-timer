@@ -1,0 +1,33 @@
+.container{
+    height:300px;
+    width:100%;
+}
+
+#display{
+    width:100%;
+    font-size:80px;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    z-index:-1;
+    position: relative;
+    top:100px;
+}
+
+.buttons{
+    text-align: center;
+    position: relative;
+    top:100px;
+}
+
+.sidenav{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  background-color: aqua;
+    
+}
