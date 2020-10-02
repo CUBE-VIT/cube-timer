@@ -20,6 +20,11 @@
     top:50px;
 }
 
+#sidenav{
+    color:#69f0ae;
+}
+
+
 #sidenav-l{
   height: 100%;
   width: 0;
@@ -65,7 +70,7 @@
   
   .solveside{
     position: fixed;
-    top: 10%;
+    top: 11%;
     left:40%;
     padding: 15px 20px;
     font-size: 20px;
@@ -73,40 +78,40 @@
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #F79806;
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
 
   }
-  .solveside:hover {background-color: #3e8e41}
+  .solveside:hover {background-color: #F5B148}
 
   .solveside:active {
-    background-color: #3e8e41;
+    background-color: #F5B148;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
 
   .userside{
     position: fixed;
-    top: 10%;
+    top: 11%;
     left:55%;
-    padding: 15px 20px;
+    padding: 15px 25px;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #F79806;
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
 
   }
-  .userside:hover {background-color: #3e8e41}
+  .userside:hover {background-color: #F5B148}
 
   .userside:active {
-    background-color: #3e8e41;
+    background-color: #F5B148;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
