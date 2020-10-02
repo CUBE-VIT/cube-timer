@@ -8,27 +8,49 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95e41cfd78.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="stopWatch.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body style=" background-image: url(./img/cubebg1.jpg);background-repeat: no-repeat;background-size: cover;";>
 
-    <div class="container">
-        <div class="sidenav" id="sidenav">
+<div class="container">
+        <div id="sidenav-l"  style="text-align: center;"><br>
+            <i style="margin-left: 70%;margin-top:-10px;cursor: pointer;" class="fas fa-times fa-2x" onclick="closelNav()"></i><br>     
+            <i style="margin: auto;" class="fas fa-stopwatch fa-4x"></i><br>
+            <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: 600;margin-top: 5px;">Solve Times</p>
+
+            <div id="sidenav"></div>
 
         </div>
+    <div class="stickers">
+        <div>
+            <button class="solveside" onclick="openlNav()" style="cursor: pointer;">Solves</button>
+        </div>
+        <div class="userside" onclick="openrNav()" style="cursor: pointer;" >User</div>
+    </div>
+    <div class="disbut" style="text-align: center;">
+        <i style="margin: auto;margin-top: 20px;" class="fas fa-cubes fa-3x"></i><br>
         <div id="display">
             00:00:00
         </div>
 
-      <div  class="buttons">  
-        <button id ="save" onclick="save()" class="btn btn-success btn-lg" style="margin-right:10px ;">Save</button>
-        <button id ="rst" onclick="reset()" class="btn btn-danger btn-lg" style="margin-left:10px ;">Reset</button>
+        <div  class="buttons">  
+            <button id ="save" onclick="save()" class="btn btn-success btn-lg" style="margin-right:10px ;">Save</button>
+            <button id ="rst" onclick="reset()" class="btn btn-danger btn-lg" style="margin-left:10px ;">Reset</button>
 
-      </div>  
+        </div>  
     </div>
+    </div>
+    <div id="sidenav-r"  style="text-align: center;"><br>
+        <i style="margin-right: 70%;margin-top:-10px;cursor: pointer;" class="fas fa-times fa-2x" onclick="closerNav()"></i><br>     
+        <i style="margin: auto;" class="fas fa-user fa-4x"></i><br>
+        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: 600;margin-top: 5px;">Feliks Zemdegs</p>
+
+</div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <script type="text/javascript">
     var c=0;
         $(document).ready(function() {
@@ -56,5 +78,38 @@
           });
         });
       </script>
+      <script>
+          var c1=0,c2=0;
+        function openlNav() {
+          if(c1%2==0){
+            document.getElementById("sidenav-l").style.width = "200px";
+            c1++;
+          }
+          else if(c1%2!=0){
+            document.getElementById("sidenav-l").style.width = "0";
+            c1++;
+          }
+         
+        }
+        
+        function closelNav() {
+          document.getElementById("sidenav-l").style.width = "0";
+        }
+        function openrNav() {
+            if(c2%2==0){
+            document.getElementById("sidenav-r").style.width = "200px";
+            c2++;
+          }
+          else if(c2%2!=0){
+            document.getElementById("sidenav-r").style.width = "0";
+            c2++;
+          }
+         
+        }
+        
+        function closerNav() {
+          document.getElementById("sidenav-r").style.width = "0";
+        }
+    </script>
 </body>
 </html>

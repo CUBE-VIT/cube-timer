@@ -8,26 +8,105 @@
     font-size:80px;
     text-align: center;
     margin: 0px auto 10px auto;
-    z-index:-1;
+    z-index:5;
     position: relative;
-    top:100px;
+    top:30px;
+    
 }
 
 .buttons{
     text-align: center;
     position: relative;
-    top:100px;
+    top:50px;
 }
 
-.sidenav{
+#sidenav-l{
   height: 100%;
-  width: 200px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
-  background-color: aqua;
+  transition: 0.25s;
+  background-color: rgb(0, 0, 0);
+  color:white;
     
 }
+#sidenav-r{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.25s;
+  background-color: rgb(0, 0, 0);
+  color: white;
+      
+  }
+
+  .disbut{
+    width: 500px;
+	height: 500px;
+	background-color: white;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+  }
+  
+
+  
+  .solveside{
+    position: fixed;
+    top: 10%;
+    left:40%;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+  }
+  .solveside:hover {background-color: #3e8e41}
+
+  .solveside:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .userside{
+    position: fixed;
+    top: 10%;
+    left:55%;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+  }
+  .userside:hover {background-color: #3e8e41}
+
+  .userside:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
